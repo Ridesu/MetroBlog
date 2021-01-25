@@ -603,7 +603,7 @@ img {
   position: relative;
 }
 .footer__image{
-  max-width: 160px;
+  max-width: 140px;
   margin: 0 0 0 auto;
  
 }
@@ -694,7 +694,7 @@ img {
     margin-right: 2px;
   }
   .footer__image {
-    width: 125px;
+    width: 140px;
   }
   .footer__text {
     margin-right: 20px;
