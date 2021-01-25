@@ -693,6 +693,9 @@ img {
   .footer__link {
     margin-right: 2px;
   }
+  .footer__link:nth-child(3){
+    margin-right: 0px;
+  }
   .footer__image {
     width: 140px;
   }
