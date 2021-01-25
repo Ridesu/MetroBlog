@@ -1,0 +1,709 @@
+/* ---FONTS--- */ 
+@font-face {
+    font-family: 'Optima LT';
+    src: url('../font/OptimaLT.eot');
+    src: url('../font/OptimaLT.eot?#iefix') format('embedded-opentype'),
+        url('../font/OptimaLT.woff2') format('woff2'),
+        url('../font/OptimaLT.woff') format('woff'),
+        url('../font/OptimaLT.ttf') format('truetype'),
+        url('../font/OptimaLT.svg#OptimaLT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'Segoe WP';
+  src: url('../font/ofont.ru_Segoe WP.eot');
+  src: local('☺'), url('../font/ofont.ru_Segoe WP.woff') format('woff'), url('../font/ofont.ru_Segoe WP.ttf') format('truetype'), url('../font/ofont.ru_Segoe WP.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ---end_fonts--- */
+body {
+  height: 100%;
+  
+}
+body.lock {
+  overflow: hidden;
+}
+.wrapper {
+  overflow: hidden;
+}
+.content {
+  min-height: 100%;
+  flex: 1 0 auto;
+}
+/* ----------*/
+
+.header {
+  z-index: 50;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0!important;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 40px;
+  z-index: 3;
+}
+.header__content {
+  padding: 30px 0 20px 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.header__text {
+  font-size: 51px;
+  line-height: 27px;
+  font-family: "Trebuchet MS";
+}
+.header__text {
+  color: #595959;
+}
+.header__lasttext {
+  color: #313131;
+}
+.header__icon {
+  display: flex;
+  
+}
+.header__circle {
+  width: 29px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6dd025;
+}
+.header__menu {
+  margin-right: 3px;
+  
+}
+.header__list { 
+  display: flex;
+  justify-content: space-between;
+  max-width: 540px;
+}
+.header__item {
+  transition: 0.7s;
+  font-size: 23px;
+  line-height: 23px;
+  color:#474847;
+  font-family: "Segoe WP N";
+  padding: 10px 17px;
+  align-items: center;
+  width: 25%;
+  margin-right: 37px;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+@media (min-width:767px) {
+  .header {
+    padding-bottom: 30px;
+  }
+  
+}
+.header__list {
+  position: relative;
+  z-index: 3;
+}
+.header__item:nth-last-child() {
+  margin-right: -15px;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition-duration: 1s;
+  }
+  .header__menu.active {
+    top:0;
+    
+  }
+  .header__midle {
+    
+    
+  }
+  .header__list {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translate(-55%);
+    display: block;
+    text-align: center;
+  }
+  
+  .header__list li {
+    color: #000;
+  }
+  
+  .header__list li {
+    margin-bottom: 20px;
+  }
+  .header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    z-index: 1;
+  }
+  .header__item {
+    color: #fff;
+  }
+  .header__burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    z-index: 3;
+    margin-right: 20px;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+    transition-duration: 1s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__burger.active:before {
+    transform: rotate(-45deg);
+    background-color: #fff;
+    top: 9px;
+  }
+  .header__burger.active:after{
+    transform: rotate(45deg);
+    background-color: #fff;
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    background-color: #fff;
+    transform: scale(0);
+  }
+  
+  .header__burger span {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    height: 2px;
+    top: 9px;
+    transition-duration: 1s;
+  }
+  .header__item {
+    font-size: 28px;
+  }
+  
+}
+@media (min-width:300px) and (max-width: 600px) {
+  .header__list {
+    position: absolute;
+    left: 62.5%;
+    top: 30%;
+    transform: translateX(-68%);
+    display: block;
+    text-align: center;
+  }
+}
+/* ------- */
+
+
+
+/* ---hi--- */ 
+
+
+
+img {
+  max-width: 100%;
+  
+}
+
+@media(max-width:767px) {
+  .main {
+    margin-top: 150px;
+  }
+}
+@media (min-width:767px) {
+  .main {
+    margin-top: 150px;
+  }
+  .header__item:hover {
+    background-color: #373737;
+    color: #fff;
+  }
+}
+
+
+/* ---hi_end--- */
+
+/* ---sidebar_start--- */
+
+.sidebar {
+  padding-left: 20px;
+}
+
+.posts {
+  margin-top: 44px;
+}
+
+/* ---sidebar_baner--- */
+.sidebar__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.baner__container {
+  background-color: #86e7f0;
+  max-width: 316px;
+  position: relative;
+}
+
+.baner__ico {
+  width: 125px;
+  height: 125px;
+  border-radius:50%;
+  background-color: #ef809f;
+  border: 6px solid #fff;
+  position: relative;
+  left:50%;
+  transform: translate(-50%, -15px);
+}
+.ico__contant {
+  
+  
+}
+.ico__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-52%, -50%);
+  text-align: center;
+}
+.ico__title {
+  padding-top: 11px;
+  font-size: 71px;
+  color: #fff;
+  font-weight: 900;
+  font-family: "Segoe WP N";
+  line-height: 55px;
+  
+}
+
+.ico__bottomtext {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Segoe WP N";
+  line-height: 22px;
+  margin-left: 5px;
+}
+.baner__items {
+  text-align: center;
+}
+/* ---baner_content_start--- */
+
+.banner__title {
+  color: #fff;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Segoe WP N";
+  margin-top: -10px;
+}
+.banner__text {
+  font-size: 23px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Optima LT";
+  margin-top: 4px;
+  margin-left: 6px;
+}
+.banner__button {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Optima LT";
+  
+}
+.banner__button {
+  padding: 10px 17px 9px 19px;
+  background-color: #58d1dc;
+  display: inline-block;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  margin-top: 4px;
+  top:0;
+  left: 0;
+  transition: 0.5s;
+  position: relative;
+}
+.banner__button:active {
+  background-color: #263A45;
+  top: .1em;
+  box-shadow: 0 0 0 60px rgba(0, 0, 0, .05) inset;
+
+  
+}
+.banner__button:hover {
+  background-color: #1DCBC8;
+  top: 0.06em;
+  left: 0.06em;
+}
+
+/* ---baner_end--- */
+/* ---form--- */
+@media (min-width: 767px) {
+  .sidebar__head {
+    display: flex;
+  }
+}
+
+.form__container {
+  max-width: 316px;
+  background-color: #393a39;
+  border-bottom: 7px solid #bb4465;
+  margin-top: 26px;
+  transition-duration: 0.5s;
+}
+.form__containersl {
+  border-bottom: 7px solid #A31A5F;
+  transition-duration: 0.5s;
+}
+.form__containers2 {
+  border-bottom: 7px solid ;
+}
+
+.form__title {
+  font-size: 27px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Segoe WP";
+  text-transform: uppercase;
+  padding-top: 27px;
+}
+.form__items {
+  text-align: center;
+}
+.form__content {
+  max-width: 246px;
+  margin: 0 auto;
+  text-align: left;
+}
+.form__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Segoe WP";
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+#name {
+  font-size: 14px;
+  line-height: 20px;
+  width: 250px;
+  font-weight: 300;
+  font-family: "Segoe WP";
+  margin-bottom: 12px;
+  padding-left: 9px;
+}
+#email {
+  padding-left: 9px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 250px;
+  font-weight: 300;
+  font-family: "Segoe WP";
+  margin-bottom: 13px;
+  margin-left: 4px;
+}
+#butt {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Optima LT";
+  text-align: center;
+  background-color: #bb4465;
+  text-transform: uppercase;
+  padding: 9px 26px 8px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  position: relative;
+  top:0;
+  transition: 0.5s;
+}
+
+#butt:hover {
+  top: .05em;
+  background-color: #A31A5F;
+}
+#butt:active {
+  top: .1em;
+  background-color: #2F2F2F;
+}
+
+/* ---form_end--- */
+/* ---slider__ico__start--- */
+
+.sico__container {
+  max-width: 387px;
+  margin: 0 auto;
+}
+@media (max-width:767px) {
+  .sidebar__ico {
+    margin-bottom: 15px;
+  }
+  .sico__container {
+    max-width: 308px;
+  }
+}
+.sico__body {
+  padding-top: 67px;
+  padding-bottom: 45px;
+  background: url("../img/slider/Layer 14.png") 50% 50%;
+  
+}
+
+@media (min-width: 767px) {
+  .sidebar__items {
+    display: flex;
+    margin-right: 20px;
+  }
+  .sidebar__ico {
+    margin-right: 27px;
+  }
+  .sico__body {
+    padding: 70px 42px 42px;
+  }
+  .sidebar__contant {
+    margin-right: 34px;
+  }
+  .block {
+    margin-top: 68px;
+  }
+}
+.sico__items {
+  align-items: center;
+}
+
+.sico__items img:nth-child(1) {
+  margin-right: 18px;
+}
+.sidebar__ico {
+  text-align: center;
+}
+/* ------- */
+
+.block__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block__container {
+  max-width: 760px;
+}
+.block__items3 {
+  margin-right: -10px;
+}
+.post {
+  max-width: 230px;
+  margin-right: 15px;
+  margin-bottom: 52px;
+  text-align: left;
+}
+@media(min-width:767px){
+  .post:nth-child(7), .post:nth-child(8), .post:nth-child(9) {
+    margin-bottom: 0;
+  }
+}
+.post__title {
+  font-size: 26px;
+  line-height: 28px;
+  color: #696161;
+  font-weight: 300;
+  font-family: "Segoe WP";
+}
+.post__content {
+  font-size: 14px;
+  line-height: 20px;
+  color: #848484;
+  font-weight: 300;
+  font-family: "Segoe WP";
+  float: left;
+}
+.sidebar__rightcontent {
+  margin-right: 0px;
+  text-align: center;
+}
+.post__datetime {
+  display: flex;
+  max-width: 100%;
+  margin: 14px 0 18px;
+}
+.datetime__date {
+  margin-right: 10px;
+}
+.datetime__date, .datetime__author {
+  font-size: 14px;
+  line-height: 20px;
+  color: #848484;
+  font-weight: 300;
+  font-family: "Segoe WP";
+}
+/* ------- */
+/* ---footer_start--- */
+.footer {
+  background-color: #393a39;
+  margin-top: 57px;
+}
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__body {
+  display: flex;
+  padding: 26px 20px 30px;
+  position: relative;
+}
+.footer__image{
+  max-width: 140px;
+  margin: 0 0 0 auto;
+ 
+}
+.footer__link {
+  margin-right: 16px;
+}
+.footer__link:nth-child(3) {
+  margin-right: 0;
+}
+.footer__text {
+  color: #fff;
+  align-items: center;
+}
+@media (max-width: 980px) and (min-width: 767px){
+  .sico__body {
+    padding: 60px 15px 42px;
+    
+  }
+  .sico__items img:nth-child(1) {
+    margin-right: 8px;
+    align-items: center;
+  }
+}
+@media (min-width:767px) {
+  .footer__text {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    
+  }
+  .block__container {
+    margin-right: -40px;
+  }
+}
+/* ---Adaptive =D--- */
+.adaptive__text {
+  font-size: calc(45px + 16 * (100vw / 1032));
+}
+.adaptive__text1 {
+  font-size: calc(40px + 11 * (100vw / 1100));
+}
+.adaptive__text2 {
+  font-size: calc(45px + 5 * (100vw / 1080));
+}
+@media (max-width: 767px) {
+  .adaptive__text {
+    font-size: calc(45px + (16 + 16 *0.7)  * ((100vw - 320px) / 1032));
+  }
+  .adaptive__text1 {
+    font-size: calc(40px + (11 + 11 *0.7)  * ((100vw - 320px) / 1100));
+  }
+  .adaptive__text2 {
+    font-size: calc(45px + (5 + 5 *0.7)  * ((100vw - 320px) / 1080));
+  }
+  .block__body {
+    
+  }
+  .block__container {
+    margin-top: 20px;
+  }
+  .header {
+    padding-bottom: 100px;
+  }
+  .sidebar{
+    padding: 0;
+    
+  }
+  .sidebar__rightcontent {
+    
+  }
+  .baner__container, .form__container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .block__body {
+    justify-content: center;
+  }
+  .post__datetime {
+    justify-content: center;
+  }
+  .post {
+    text-align: center;
+    
+  }
+  .footer__link {
+    margin-right: 2px;
+  }
+  .footer__image {
+    width: 125px;
+  }
+  .footer__text {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 767px) {
+  .adaptive__text {
+  }
+  
+}
+
+/* ---End...--- */

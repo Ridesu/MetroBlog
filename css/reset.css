@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*Обнуление*/
+/* line 2, ../sass/reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+/* line 7, ../sass/reset.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/reset.scss */
+:focus, :active {
+  outline: none;
+}
+
+/* line 13, ../sass/reset.scss */
+a:focus, a:active {
+  outline: none;
+}
+
+/* line 14, ../sass/reset.scss */
+nav, footer, header, aside {
+  display: block;
+}
+
+/* line 15, ../sass/reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 25, ../sass/reset.scss */
+input, button, textarea {
+  font-family: inherit;
+}
+
+/* line 26, ../sass/reset.scss */
+input::-ms-clear {
+  display: none;
+}
+
+/* line 27, ../sass/reset.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 28, ../sass/reset.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 29, ../sass/reset.scss */
+a, a:visited {
+  text-decoration: none;
+}
+
+/* line 30, ../sass/reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 31, ../sass/reset.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 32, ../sass/reset.scss */
+img {
+  vertical-align: top;
+}
+
+/* line 33, ../sass/reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
