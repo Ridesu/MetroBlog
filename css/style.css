@@ -697,7 +697,7 @@ img {
     width: 140px;
   }
   .footer__text {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 767px) {
