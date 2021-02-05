@@ -28,8 +28,8 @@ function sendMail() {
       }else {
         setTimeout("alert('Значить ти 馬鹿, окей, ти бажаєш знати що я хочу тобі сказати')", 5000);
         setTimeout("alert('...')",10000)
-        setTimeout("alert('Я хз що сказати :)')", 15000)
-        setTimeout();
+        setTimeout("alert('Неко тян топ')", 15000)
+        setTimeout("аlert('І 02 тоже')", 20000);
         
       }
     }
