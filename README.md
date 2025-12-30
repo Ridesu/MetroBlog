@@ -160,9 +160,20 @@ git clone https://github.com/Ridesu/portfolio.git
 ```bash
 cd portfolio
 ```
-
+```bash
+python manage.py runserver
+```
 
 Personal portfolio website that showcases my projects, skills, and background as a junior developer / cybersecurity enthusiast.
+
+## 🔐 Admin panel (demo credentials)
+
+The project includes a demo admin account for testing:
+
+- **Username:** `root`
+- **Password:** `root`
+
+> Note: Demo credentials are provided for local testing and portfolio demonstration only.
 
 
 
